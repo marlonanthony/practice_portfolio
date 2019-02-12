@@ -26,13 +26,13 @@
           <a href="index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="about.html" class="nav-link">About Me</a>
+          <a href="about.html" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-          <a href="work.html" class="nav-link">My Work</a>
+          <a href="work.html" class="nav-link">Projects</a>
         </li>
         <li class="nav-item current">
-          <a href="contact.html" class="nav-link">Get in Touch</a>
+          <a href="contact.html" class="nav-link">Reach Out</a>
         </li>
       </ul>
     </nav>
@@ -40,13 +40,50 @@
   </header>
 
   <main id='contact'>
-    <h1 class="lg-heading">
-      Say <span class='text-secondary'>Hi</span>
+    <h1 style="text-align: center;" class="lg-heading">
+      Contact <span class='text-secondary'>Me</span>
     </h1>
-    <h2 class="sm-heading">
+    <!-- <h2 style='text-align: center;' class="sm-heading">
       Reach out
-    </h2>
-    <div class="boxes">
+    </h2> -->
+    <section class='formcontainer'>
+      <form 
+        class='form'
+        action="https://getsimpleform.com/messages?form_api_token=29d3c52cc4305f19618fda585ad49b9e"
+        method="POST">
+        <!-- <input type="hidden" name='redirect_to' value='https://marlondecosta.com/thankyou.html'>  -->
+        <input type="text" class='form_control' id='form_name' name='form_name' placeholder="Your Name" required>
+        <input type="email" class='form_control' id='form_email' name='form_email' placeholder="Your Email" required>
+        <textarea name="message" class="form_control" id="form_message" rows="3" placeholder="Reach Out" required></textarea>
+        <button type="submit" class="submit_btn form_control" onclick="alert('Thank you!')">Say hi!</button>
+      </form>
+    </section>
+
+
+    <section class="contact_icons_container" style='text-align: center;'>
+      <div class="icons">
+        <a href='https://twitter.com/marlonanthony10' target="_blank">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href='https://www.linkedin.com/in/marlon-decosta-73b26a45/' target='_blank'>
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href='https://github.com/marlonanthony' target="_blank">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://medium.com/@marlonanthony" target="_blank">
+            <i class="fab fa-medium-m fa-2x"></i>
+        </a>
+        <!-- <a href="https://codepen.io/borgatajunky/" target="_blank">
+            <i class="fab fa-codepen fa-2x"></i>
+        </a> -->
+      </div>
+  </section>
+
+
+
+
+    <!-- <div class="boxes">
       <div>
           <span class="text-secondary">Email:</span> mad1083@gmail.com
       </div>
@@ -56,7 +93,7 @@
       <div>
           <span class="text-secondary">Address:</span> 1 Main Street Big Bird KA 01830
       </div>
-    </div>
+    </div> -->
   </main>
 
   <footer id='main-footer'>

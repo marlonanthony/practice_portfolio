@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #000;
+    background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #f2f2f2;
+    background: black;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #fff;
+    background: #000;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -72,7 +72,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -94,8 +94,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #fff;
-  color: #000;
+  background: #000;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -105,12 +105,10 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 5rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    max-width: 650px;
-    background: rgba(255, 255, 255, 0.5); }
+    padding: 0.2rem 1rem; }
 
 a {
   color: #fff;
@@ -160,16 +158,15 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: white;
+    background: #0d0d0d;
     padding: 0.5rem;
     border-bottom: cyan 5px solid; }
 
 .projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
   .projects img {
-    width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
@@ -177,8 +174,32 @@ main {
       transition: all 0.5s ease-out; }
 
 .item {
-  max-width: 400px;
-  min-width: 250px; }
+  width: 400px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; }
+  .form ::placeholder {
+    text-align: center;
+    color: black;
+    font-size: 1rem; }
+
+.form_control {
+  padding: 20px;
+  width: 80%;
+  margin: 5px;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background: lavender; }
 
 .boxes {
   display: flex;
@@ -203,29 +224,39 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  width: 300px; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: cyan;
-    color: #000; }
+    color: #000;
+    cursor: pointer; }
 
 .btn-dark {
-  background: gray;
+  background: black;
   color: #fff; }
 
 .btn-light {
   background: white;
   color: #333; }
 
+.submit_btn {
+  color: black; }
+  .submit_btn:hover {
+    background: cyan;
+    cursor: pointer; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #e6e6e6;
-  color: #000;
+  color: #fff;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .form {
+    width: 50%;
+    margin-left: 25%; } }
 
 @media screen and (min-width: 869) and (max-width: 1170px) {
   .projects {
@@ -261,7 +292,9 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+    font-size: 3rem; } }
 
 @media screen and (max-width: 650px) {
   main#home h1 {
@@ -271,4 +304,7 @@ main {
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 2.5rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    font-size: 1rem; }
+  .form_control {
+    width: 100%;
     font-size: 1rem; } }

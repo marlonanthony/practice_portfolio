@@ -3,6 +3,10 @@
     .projects {
         grid-template-columns: repeat(4, 1fr);
     }
+    .form {
+        width: 50%;
+        margin-left: 25%;
+    }
 }
 // Desktops & Laptops
 @include mediaLg {
@@ -64,6 +68,11 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+    h1, h2, h3 {
+        &.lg-heading {
+            font-size: 3rem;
+        }
+    }
 }
 // Smartphones 
 @include mediaSm {
@@ -81,5 +90,9 @@
         &.sm-heading {
             font-size: 1rem;
         }
+    }
+    .form_control {
+        width: 100%;
+        font-size: 1rem;
     }
 }

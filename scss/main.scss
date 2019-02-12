@@ -21,14 +21,15 @@ h1, h2, h3 {
     font-weight: 400;
 
     &.lg-heading {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        max-width: 650px;
-        background: rgba(lighten($primary-color, 2), 0.5);
+        // max-width: 650px;
+        // text-align: center;
+        // background: rgba(lighten($primary-color, 2), 0.5);
     }
 }
 
@@ -115,12 +116,15 @@ main {
 
 // Work/ Projects
 .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.7rem;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 0.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     img {
-        width: 100%;
+        // width: 100%;
         // width: 300px;
         // height: 200px;
         border: 3px #fff solid;
@@ -133,11 +137,46 @@ main {
     }
 }
 .item {
-    max-width: 400px;
-    min-width: 250px;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 // Contact Page
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: set-text-color($primary-color);
+    ::placeholder {
+        text-align: center;
+        color: black;
+        font-size: 1rem;
+        // color: set-text-color($primary-color);
+    }
+}
+.form_control {
+    padding: 20px;
+    width: 80%;
+    margin: 5px;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    // color: set-text-color($secondary-color);
+    // background: darken($primary-color, 50);
+    background: lavender;
+    
+}
+
+
+
+
+
+
 .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -169,9 +208,11 @@ main {
     padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;
+    width: 300px;
     &:hover {
         background: $secondary-color;
         color: set-text-color($secondary-color);
+        cursor: pointer;
     }
 }
 
@@ -183,14 +224,25 @@ main {
 
 .btn-light {
     @extend .btn;
-    background: lighten($primary-color, 50);
+    background: white;
+    // background: lighten($primary-color, 50);
     color: #333;
+}
+
+.submit_btn {
+    color: black;
+    // color: set-text-color($primary-color);
+    &:hover {
+        background: $secondary-color;
+        // color: set-text-color($primary-color);
+        cursor: pointer;
+    }
 }
 
 #main-footer {
     text-align: center;
     padding: 1rem;
-    background: darken($primary-color, 10);
+    // background: darken($primary-color, 10);
     color: set-text-color($primary-color);
     height: 60px;
 }
