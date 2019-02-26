@@ -163,7 +163,7 @@ main {
     padding: 20px;
     width: 80%;
     margin: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: none;
     outline: none;
     // color: set-text-color($secondary-color);
@@ -231,6 +231,7 @@ main {
 
 .submit_btn {
     color: black;
+    background: rgb(96, 168, 201);
     // color: set-text-color($primary-color);
     &:hover {
         background: $secondary-color;
