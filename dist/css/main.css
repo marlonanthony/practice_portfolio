@@ -199,7 +199,7 @@ main {
   font-size: 1.5rem;
   border: none;
   outline: none;
-  background: lavender; }
+  background: white; }
 
 .boxes {
   display: flex;
@@ -240,10 +240,13 @@ main {
   color: #333; }
 
 .submit_btn {
-  color: black;
-  background: #60a8c9; }
+  color: cyan;
+  background: black;
+  border: 1px solid cyan;
+  border-radius: 5px; }
   .submit_btn:hover {
     background: cyan;
+    color: #000;
     cursor: pointer; }
 
 #main-footer {

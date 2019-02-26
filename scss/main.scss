@@ -168,7 +168,7 @@ main {
     outline: none;
     // color: set-text-color($secondary-color);
     // background: darken($primary-color, 50);
-    background: lavender;
+    background: white;
     
 }
 
@@ -230,12 +230,14 @@ main {
 }
 
 .submit_btn {
-    color: black;
-    background: rgb(96, 168, 201);
+    color: cyan;
+    background: black;
+    border: 1px solid cyan;
+    border-radius: 5px;
     // color: set-text-color($primary-color);
     &:hover {
         background: $secondary-color;
-        // color: set-text-color($primary-color);
+        color: set-text-color($secondary-color);
         cursor: pointer;
     }
 }
