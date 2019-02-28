@@ -98,7 +98,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Times New Roman', Times, serif, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
   line-height: 1.5; }
 
 h1, h2, h3 {
@@ -240,14 +240,7 @@ main {
   color: #333; }
 
 .submit_btn {
-  color: cyan;
-  background: black;
-  border: 1px solid cyan;
-  border-radius: 5px; }
-  .submit_btn:hover {
-    background: cyan;
-    color: #000;
-    cursor: pointer; }
+  border: 1px solid cyan; }
 
 #main-footer {
   text-align: center;

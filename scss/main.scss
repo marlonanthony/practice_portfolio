@@ -11,7 +11,7 @@ body {
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-family: 'Times New Roman', Times, serif, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana; 
     line-height: 1.5;
 }
 
@@ -230,16 +230,15 @@ main {
 }
 
 .submit_btn {
-    color: cyan;
-    background: black;
+    // color: cyan;
+    // background: black;
     border: 1px solid cyan;
-    border-radius: 5px;
     // color: set-text-color($primary-color);
-    &:hover {
-        background: $secondary-color;
-        color: set-text-color($secondary-color);
-        cursor: pointer;
-    }
+    // &:hover {
+    //     background: $secondary-color;
+    //     color: set-text-color($secondary-color);
+    //     cursor: pointer;
+    // }
 }
 
 #main-footer {
