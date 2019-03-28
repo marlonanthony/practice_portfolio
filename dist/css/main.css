@@ -202,7 +202,8 @@ main {
   font-size: 1.5rem;
   border: none;
   outline: none;
-  border-bottom: 2px solid cyan; }
+  border-bottom: 2px solid cyan;
+  background: white; }
 
 .boxes {
   display: flex;
@@ -244,12 +245,13 @@ main {
 
 .submit_btn {
   padding: 10px;
-  color: #eee;
-  border: none;
-  background: #999;
+  color: #666;
+  border: 1px solid cyan;
+  border-radius: 1px;
+  background: white;
   font-size: 1rem; }
   .submit_btn:hover {
-    background: rgba(0, 255, 255, 0.5);
+    background: cyan;
     color: #030303;
     cursor: pointer; }
 

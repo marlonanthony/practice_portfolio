@@ -191,6 +191,7 @@ main {
     border: none;
     outline: none;
     border-bottom: 2px solid cyan;
+    background: white;
     // background: rgba(0,0,0,0.5);
     // color: white;
     // color: set-text-color($secondary-color);
@@ -252,14 +253,15 @@ main {
 
 .submit_btn {
     padding: 10px;
-    color: #eee;
-    border: none;
-    background: #999;
+    color: #666;
+    border: 1px solid cyan;
+    border-radius: 1px;
+    background: white;
     // color: set-text-color($primary-color);
     // border: 1px solid rgba(0,225,225,1);
     font-size: 1rem;
     &:hover {
-        background: rgba(0,255,255,0.5);
+        background: cyan;
         color: #030303;
         // border: 1px solid cyan;
         cursor: pointer;
