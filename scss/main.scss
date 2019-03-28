@@ -7,8 +7,10 @@
 
 body {
     @include background;
-    background: $primary-color;
-    color: set-text-color($primary-color);
+    // background: $primary-color;
+    background: white;
+    color: black;
+    // color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
     font-family: 'Times New Roman', Times, serif, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana; 
@@ -79,16 +81,22 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-areas: 
-        'bioimage bio bio'
+        'bio bio aboutimage'
         'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr);
 
-    .bio-image {
-        grid-area: bioimage;
+    .about-image {
+        grid-area: aboutimage;
         margin: auto;
-        border-radius: 50%;
-        border: $secondary-color 3px solid;
+
     }
+
+    // .bio-image {
+    //     grid-area: bioimage;
+    //     margin: auto;
+    //     border-radius: 50%;
+    //     border: $secondary-color 3px solid;
+    // }
     
     .bio {
         grid-area: bio;
@@ -108,9 +116,18 @@ main {
     }
     
     .job {
-        background: lighten($primary-color, 5);
+        // background: lighten($primary-color, 90);
         padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
+        border-bottom: $secondary-color 3px solid;
+        .about-desc {
+            font-size: .85rem;
+            list-style: none;
+            padding: 5px;
+        }
+    }
+    .author {
+        color: rgb(0, 205, 205);
+        font-size: .9rem;
     }
 }
 
@@ -153,8 +170,8 @@ main {
     align-items: center;
     color: set-text-color($primary-color);
     ::placeholder {
-        text-align: center;
-        color: black;
+        // text-align: center;
+        color: white;
         font-size: 1rem;
         // color: set-text-color($primary-color);
     }
@@ -166,16 +183,12 @@ main {
     font-size: 1.5rem;
     border: none;
     outline: none;
+    background: rgba(0,0,0,0.5);
+    color: white;
     // color: set-text-color($secondary-color);
     // background: darken($primary-color, 50);
-    background: white;
     
 }
-
-
-
-
-
 
 .boxes {
     display: flex;
@@ -230,15 +243,16 @@ main {
 }
 
 .submit_btn {
-    // color: cyan;
-    // background: black;
-    border: 1px solid cyan;
-    // color: set-text-color($primary-color);
-    // &:hover {
-    //     background: $secondary-color;
-    //     color: set-text-color($secondary-color);
-    //     cursor: pointer;
-    // }
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    color: set-text-color($primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    &:hover {
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+        cursor: pointer;
+    }
 }
 
 #main-footer {

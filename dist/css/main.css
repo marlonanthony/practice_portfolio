@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: black;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -94,8 +94,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #000000;
-  color: #fff;
+  background: white;
+  color: black;
   height: 100%;
   margin: 0;
   font-family: 'Times New Roman', Times, serif, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
@@ -141,13 +141,11 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bio bio aboutimage' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: cyan 3px solid; }
+  .about-info .about-image {
+    grid-area: aboutimage;
+    margin: auto; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -158,9 +156,15 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #0d0d0d;
     padding: 0.5rem;
-    border-bottom: cyan 5px solid; }
+    border-bottom: cyan 3px solid; }
+    .about-info .job .about-desc {
+      font-size: .85rem;
+      list-style: none;
+      padding: 5px; }
+  .about-info .author {
+    color: #00cdcd;
+    font-size: .9rem; }
 
 .projects {
   display: flex;
@@ -188,8 +192,7 @@ main {
   align-items: center;
   color: #fff; }
   .form ::placeholder {
-    text-align: center;
-    color: black;
+    color: white;
     font-size: 1rem; }
 
 .form_control {
@@ -199,7 +202,8 @@ main {
   font-size: 1.5rem;
   border: none;
   outline: none;
-  background: white; }
+  background: rgba(0, 0, 0, 0.5);
+  color: white; }
 
 .boxes {
   display: flex;
@@ -240,7 +244,15 @@ main {
   color: #333; }
 
 .submit_btn {
-  border: 1px solid cyan; }
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1rem; }
+  .submit_btn:hover {
+    background: cyan;
+    color: #000;
+    cursor: pointer; }
 
 #main-footer {
   text-align: center;
@@ -286,8 +298,10 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'aboutimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
+  .job-1 {
+    border-top: cyan 3px solid; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {

@@ -56,13 +56,16 @@
 
     .about-info {
         grid-template-areas: 
-        'bioimage'
+        'aboutimage'
         'bio'
         'job1'
         'job2'
         'job3';
 
         grid-template-columns: 1fr;
+    }
+    .job-1 {
+        border-top: $secondary-color 3px solid;
     }
 
     .projects {
