@@ -35,6 +35,10 @@ h1, h2, h3 {
         // text-align: center;
         // background: rgba(lighten($primary-color, 2), 0.5);
     }
+    &.smaller-headings {
+        margin-bottom: 2rem;
+        color: #555;
+    }
 }
 
 a {

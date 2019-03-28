@@ -105,6 +105,9 @@ h1, h2, h3 {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     color: #555; }
+  h1.smaller-headings, h2.smaller-headings, h3.smaller-headings {
+    margin-bottom: 2rem;
+    color: #555; }
 
 a {
   color: #fff;
