@@ -160,7 +160,8 @@ main {
     .about-info .job .about-desc {
       font-size: .85rem;
       list-style: none;
-      padding: 5px; }
+      padding: 5px;
+      color: #555; }
   .about-info .author {
     color: #00cdcd;
     font-size: .9rem; }
@@ -243,12 +244,13 @@ main {
 
 .submit_btn {
   padding: 10px;
-  color: #666;
-  border: 0.05px solid rgba(0, 225, 225, 0.3);
+  color: #eee;
+  border: none;
+  background: #999;
   font-size: 1rem; }
   .submit_btn:hover {
-    color: rgba(0, 225, 225, 0.7);
-    border: 1px solid cyan;
+    background: rgba(0, 255, 255, 0.5);
+    color: #030303;
     cursor: pointer; }
 
 #main-footer {

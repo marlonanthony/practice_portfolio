@@ -129,6 +129,7 @@ main {
             font-size: .85rem;
             list-style: none;
             padding: 5px;
+            color: #555;
         }
     }
     .author {
@@ -251,15 +252,16 @@ main {
 
 .submit_btn {
     padding: 10px;
-    color: #666;
-    // background: rgb(0, 255, 255);
+    color: #eee;
+    border: none;
+    background: #999;
     // color: set-text-color($primary-color);
-    border: .05px solid rgba(0,225,225,0.3);
+    // border: 1px solid rgba(0,225,225,1);
     font-size: 1rem;
     &:hover {
-        // background: rgba(0,255,255,0.5);
-        color: rgba(0,225,225,0.7);
-        border: 1px solid cyan;
+        background: rgba(0,255,255,0.5);
+        color: #030303;
+        // border: 1px solid cyan;
         cursor: pointer;
     }
 }
