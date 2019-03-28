@@ -52,14 +52,6 @@
     transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
-    .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("../img/undraw_developer_activity_bv83.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      border-radius: 50%; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -194,7 +186,6 @@ main {
   align-items: center;
   color: #fff; }
   .form ::placeholder {
-    color: white;
     font-size: 1rem; }
 
 .form_control {
@@ -204,8 +195,7 @@ main {
   font-size: 1.5rem;
   border: none;
   outline: none;
-  background: rgba(0, 0, 0, 0.5);
-  color: white; }
+  border-bottom: 2px solid cyan; }
 
 .boxes {
   display: flex;
@@ -247,8 +237,7 @@ main {
 
 .submit_btn {
   padding: 10px;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background: cyan;
   border-radius: 5px;
   font-size: 1rem; }
   .submit_btn:hover {
@@ -295,13 +284,6 @@ main {
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      width: 150px;
-      height: 150px;
-      background: url("../img/undraw_developer_activity_bv83.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center; }
   .about-info {
     grid-template-areas: 'aboutimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
