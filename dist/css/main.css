@@ -99,10 +99,12 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 5rem; }
+    font-size: 5rem;
+    color: #555; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem; }
+    padding: 0.2rem 1rem;
+    color: #555; }
 
 a {
   color: #fff;
@@ -186,6 +188,7 @@ main {
   align-items: center;
   color: #fff; }
   .form ::placeholder {
+    text-align: center;
     font-size: 1rem; }
 
 .form_control {
@@ -237,12 +240,12 @@ main {
 
 .submit_btn {
   padding: 10px;
-  background: cyan;
-  border-radius: 5px;
+  color: #666;
+  border: 0.05px solid rgba(0, 225, 225, 0.3);
   font-size: 1rem; }
   .submit_btn:hover {
-    background: cyan;
-    color: #000;
+    color: rgba(0, 225, 225, 0.7);
+    border: 1px solid cyan;
     cursor: pointer; }
 
 #main-footer {
