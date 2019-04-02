@@ -157,10 +157,10 @@ main {
     grid-area: fav-books; }
   .about-info .job-3 {
     grid-area: blog-posts; }
-  .about-info .job {
+  .about-info .about-list {
     padding: 0.5rem;
     border-bottom: #3783c2 3px solid; }
-    .about-info .job .about-desc {
+    .about-info .about-list .about-desc {
       font-size: .85rem;
       list-style: none;
       padding: 5px;

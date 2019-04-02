@@ -132,7 +132,7 @@ main {
         grid-area: blog-posts;
     }
     
-    .job {
+    .about-list {
         // background: lighten($primary-color, 90);
         padding: 0.5rem;
         border-bottom: $secondary-color 3px solid;
@@ -149,7 +149,7 @@ main {
     }
 }
 
-// Work/ Projects
+// Projects
 .projects {
     // display: grid;
     // grid-template-columns: repeat(3, 1fr);
@@ -159,7 +159,6 @@ main {
     justify-content: center;
 
     img {
-
 
         &:hover {
             opacity: 0.5;
