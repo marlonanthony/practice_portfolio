@@ -232,7 +232,8 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
-  width: 300px; }
+  width: 300px;
+  font-size: .9rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #3783c2;
     color: #000;
