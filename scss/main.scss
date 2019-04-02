@@ -154,7 +154,7 @@ main {
         border: 3px #fff solid;
 
         &:hover {
-            opacity: 0.5;
+            // opacity: 0.5;
             border-color: $secondary-color;
             @include easeOut;
         }

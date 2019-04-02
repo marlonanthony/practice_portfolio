@@ -11,7 +11,6 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        // background: black;
         background: set-text-color($secondary-color);
         @include easeOut;
     }
@@ -47,15 +46,13 @@
     &.show {
         visibility: visible;
     }
-
-    &-branding, 
     &-nav {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
         float: left;
-        width: 50%;
+        width: 100%;
         height: 100vh;
         overflow: hidden;
     }
@@ -71,29 +68,6 @@
         &.show {
             // Slide in from top 
             transform: translate3d(0, 0, 0)
-        }
-    }
-
-    // Branding Side
-    &-branding {
-        background: $primary-color;
-        transform: translate3d(0, 100%, 0);
-        @include easeOut;
-
-        &.show {
-            // Slide in from bottom
-            transform: translate3d(0, 0, 0)
-        }
-
-        .portrait {
-            // width: 250px;
-            // height: 250px;
-            // background: url('../img/undraw_developer_activity_bv83.png');
-            // background-repeat: no-repeat;
-            // background-size: cover;
-            // background-position: center;
-            // border-radius: 50%;
-            // border: solid 3px $secondary-color;
         }
     }
 
@@ -118,7 +92,8 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: set-text-color($primary-color);
+        color: #666;
+        // color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
 
