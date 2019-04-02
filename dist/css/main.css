@@ -82,7 +82,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #000;
+  background: #000000;
   color: #666;
   height: 100%;
   margin: 0;
@@ -93,12 +93,10 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 4rem;
-    color: #666; }
+    font-size: 4rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem;
-    color: #666; }
+    padding: 0.2rem; }
   h1.smaller-headings, h2.smaller-headings, h3.smaller-headings {
     margin-bottom: 2rem;
     color: #777; }
@@ -146,16 +144,15 @@ main {
   grid-template-areas: 'bio bio aboutimage' 'books-reading fav-books blog-posts';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .about-image {
-    grid-area: aboutimage;
-    margin: auto; }
+    grid-area: aboutimage; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .job-1 {
+  .about-info .books-reading {
     grid-area: books-reading; }
-  .about-info .job-2 {
+  .about-info .fav-books {
     grid-area: fav-books; }
-  .about-info .job-3 {
+  .about-info .blog-posts {
     grid-area: blog-posts; }
   .about-info .about-list {
     padding: 0.5rem;
@@ -163,8 +160,7 @@ main {
     .about-info .about-list .about-desc {
       font-size: .85rem;
       list-style: none;
-      padding: 5px;
-      color: #555; }
+      padding: 5px; }
   .about-info .author {
     color: #3783c2;
     font-size: .9rem; }
@@ -233,14 +229,14 @@ main {
 .btn-light {
   background: white;
   width: 150px;
-  color: #333; }
+  color: #444; }
   .btn-light:hover {
     color: #fff; }
 
 .submit_btn {
   padding: 10px;
   color: #ccc;
-  border: 0.5px solid #3783c2;
+  border: none;
   border-radius: 0;
   background: #3783c2;
   font-size: 1rem; }
@@ -248,12 +244,6 @@ main {
     background: #3783c2;
     color: #fff;
     cursor: pointer; }
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  color: #fff;
-  height: 60px; }
 
 @media screen and (min-width: 1171px) {
   .projects {
