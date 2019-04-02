@@ -185,6 +185,10 @@ main {
   justify-content: center;
   align-items: center; }
 
+.project-btn-div {
+  display: flex;
+  justify-content: stretch; }
+
 .form {
   display: flex;
   flex-direction: column;
@@ -202,27 +206,7 @@ main {
   border: none;
   outline: none;
   border-bottom: 2px solid #3783c2;
-  background: black;
-  color: #666; }
-
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem; }
-  .boxes div {
-    font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #3783c2;
-      color: #000; }
-      .boxes div:hover span {
-        color: #000; }
+  background: #000000; }
 
 .contact_icons_container {
   margin-top: 50px; }

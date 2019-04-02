@@ -151,9 +151,6 @@ main {
 
 // Projects
 .projects {
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-gap: 0.7rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -174,6 +171,10 @@ main {
     justify-content: center;
     align-items: center;
 }
+.project-btn-div {
+    display: flex;
+    justify-content: stretch;
+}
 
 // Contact Page
 
@@ -182,12 +183,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // color: set-text-color($primary-color);
     ::placeholder {
         text-align: center;
-        // color: white;
         font-size: 1rem;
-        // color: set-text-color($primary-color);
     }
 }
 .form_control {
@@ -198,38 +196,8 @@ main {
     border: none;
     outline: none;
     border-bottom: 2px solid rgb(55,131,194);
-    background: black;
-    color: #666;
-    // background: rgba(0,0,0,0.5);
-    // color: white;
-    // color: set-text-color($secondary-color);
-    // background: darken($primary-color, 50);
+    background: $primary-color;
     
-}
-
-.boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem;
-
-    div {
-        font-size: 2rem;
-        border: 3px #fff solid;
-        padding: 1.5rem 2.5rem;
-        margin-bottom: 3rem;
-        @include easeOut;
-
-        &:hover {
-            padding: 0.5rem 1.5rem;
-            background: $secondary-color;
-            color: set-text-color($secondary-color);
-            span {
-                color: set-text-color($secondary-color);
-            }
-        }
-    }
 }
 
 .contact_icons_container {
