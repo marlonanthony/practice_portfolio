@@ -30,9 +30,6 @@
                 'home-info'
                 'home-pic';
         }
-        // .home-pic {
-        //     max-width: 200px;
-        // }
     }
 
     ul.menu-nav, 
@@ -55,14 +52,17 @@
         grid-template-areas: 
         'aboutimage'
         'bio'
-        'job1'
-        'job2'
-        'job3';
+        'books-reading'
+        'fav-books'
+        'blog-posts';
 
         grid-template-columns: 1fr;
     }
-    .job-1 {
+    .books-reading {
         border-top: $secondary-color 3px solid;
+    }
+    .books-reading-header {
+        padding-top: 20px;
     }
 
     .projects {

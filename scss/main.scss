@@ -24,7 +24,7 @@ h1, h2, h3 {
 
     &.lg-heading {
         font-size: 4rem;
-        color: #999;
+        color: #666;
     }
 
     &.sm-heading {
@@ -97,7 +97,8 @@ main {
     grid-gap: 30px;
     grid-template-areas: 
         'bio bio aboutimage'
-        'job1 job2 job3';
+        'books-reading fav-books blog-posts';
+        // 'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr);
 
     .about-image {
@@ -119,15 +120,16 @@ main {
     }
     
     .job-1 {
-        grid-area: job1;
+        grid-area: books-reading;
+        // grid-area: job1;
     }
     
     .job-2 {
-        grid-area: job2;
+        grid-area: fav-books;
     }
     
     .job-3 {
-        grid-area: job3;
+        grid-area: blog-posts;
     }
     
     .job {
@@ -175,6 +177,7 @@ main {
 }
 
 // Contact Page
+
 .form {
     display: flex;
     flex-direction: column;
@@ -230,6 +233,10 @@ main {
     }
 }
 
+.contact_icons_container {
+    margin-top: 50px;
+}
+
 // Button Styles
 .btn {
     display: block;
@@ -265,17 +272,14 @@ main {
 
 .submit_btn {
     padding: 10px;
-    color: #666;
+    color: #ccc;
     border: .5px solid rgba(55,131,194,1);
     border-radius: 0;
-    background: none;
-    // color: set-text-color($primary-color);
-    // border: 1px solid rgba(0,225,225,1);
+    background: $secondary-color;
     font-size: 1rem;
     &:hover {
         background: $secondary-color;
         color: #fff;
-        // border: 1px solid cyan;
         cursor: pointer;
     }
 }

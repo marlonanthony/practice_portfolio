@@ -94,7 +94,7 @@ h1, h2, h3 {
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 4rem;
-    color: #999; }
+    color: #666; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem;
@@ -143,7 +143,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bio bio aboutimage' 'job1 job2 job3';
+  grid-template-areas: 'bio bio aboutimage' 'books-reading fav-books blog-posts';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .about-image {
     grid-area: aboutimage;
@@ -152,11 +152,11 @@ main {
     grid-area: bio;
     font-size: 1.5rem; }
   .about-info .job-1 {
-    grid-area: job1; }
+    grid-area: books-reading; }
   .about-info .job-2 {
-    grid-area: job2; }
+    grid-area: fav-books; }
   .about-info .job-3 {
-    grid-area: job3; }
+    grid-area: blog-posts; }
   .about-info .job {
     padding: 0.5rem;
     border-bottom: #3783c2 3px solid; }
@@ -224,6 +224,9 @@ main {
       .boxes div:hover span {
         color: #000; }
 
+.contact_icons_container {
+  margin-top: 50px; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -249,10 +252,10 @@ main {
 
 .submit_btn {
   padding: 10px;
-  color: #666;
+  color: #ccc;
   border: 0.5px solid #3783c2;
   border-radius: 0;
-  background: none;
+  background: #3783c2;
   font-size: 1rem; }
   .submit_btn:hover {
     background: #3783c2;
@@ -299,10 +302,12 @@ main {
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .about-info {
-    grid-template-areas: 'aboutimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'aboutimage' 'bio' 'books-reading' 'fav-books' 'blog-posts';
     grid-template-columns: 1fr; }
-  .job-1 {
+  .books-reading {
     border-top: #3783c2 3px solid; }
+  .books-reading-header {
+    padding-top: 20px; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
