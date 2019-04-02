@@ -60,7 +60,7 @@
     &-nav {
         margin: 0;
         padding: 0;
-        background: darken($primary-color, 5);
+        // background: darken($primary-color, 5);
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
@@ -93,7 +93,6 @@
         padding: 1rem 0;
         font-weight: 300;
         color: #666;
-        // color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
 
