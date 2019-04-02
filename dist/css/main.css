@@ -239,6 +239,7 @@ main {
     cursor: pointer; }
 
 .btn-dark {
+  width: 150px;
   background: black;
   color: #fff; }
   .btn-dark:hover {
@@ -246,6 +247,7 @@ main {
 
 .btn-light {
   background: white;
+  width: 150px;
   color: #333; }
   .btn-light:hover {
     color: #fff; }

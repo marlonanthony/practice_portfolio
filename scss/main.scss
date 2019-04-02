@@ -253,6 +253,7 @@ main {
 
 .btn-dark {
     @extend .btn;
+    width: 150px;
     background: darken($primary-color, 50);
     color: #fff;
     &:hover {
@@ -263,6 +264,7 @@ main {
 .btn-light {
     @extend .btn;
     background: white;
+    width: 150px;
     // background: lighten($primary-color, 50);
     color: #333;
     &:hover {
