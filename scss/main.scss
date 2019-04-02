@@ -94,11 +94,19 @@ main {
         'books-reading fav-books blog-posts';
     grid-template-columns: repeat(3, 1fr);
 
-    .about-image { grid-area: aboutimage; }
+    .about-image { 
+        grid-area: aboutimage; 
+        img {
+            min-width: 250px;
+            height: 100%;
+            width: 100%;
+        }
+    }
     
     .bio {
         grid-area: bio;
-        font-size: 1.5rem;
+        color: #555; 
+        font-size: 1.2rem;
     }
 
     .books-reading { grid-area: books-reading; }
@@ -147,7 +155,6 @@ main {
 }
 
 // Contact Page
-
 .form {
     display: flex;
     flex-direction: column;
