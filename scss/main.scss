@@ -8,12 +8,12 @@
 body {
     @include background;
     // background: $primary-color;
-    background: white;
-    color: black;
+    background: #000;
+    color: #666;
     // color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
-    font-family: 'Times New Roman', Times, serif, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana; 
+    font-family: Arial, 'Times New Roman', Times, serif, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
     line-height: 1.5;
 }
 
@@ -23,21 +23,21 @@ h1, h2, h3 {
     font-weight: 400;
 
     &.lg-heading {
-        font-size: 5rem;
-        color: #555;
+        font-size: 4rem;
+        color: #999;
     }
 
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        color: #555;
+        color: #666;
         // max-width: 650px;
         // text-align: center;
         // background: rgba(lighten($primary-color, 2), 0.5);
     }
     &.smaller-headings {
         margin-bottom: 2rem;
-        color: #555;
+        color: #777;
     }
 }
 
@@ -58,7 +58,6 @@ header {
 
 main {
     padding: 4rem;
-    // height: 100% would equal 100% of the content within main's height, Not the screen height
     // Calculate the height to create sticky footer
     // The height of view port - height of footer
     min-height: calc(100vh - 60px);
@@ -66,7 +65,7 @@ main {
     .icons {
         margin-top: 1rem;
         a {
-            color: #aaa;
+            color: #666;
             padding: 0.4rem;
             &:hover {
                 color: $secondary-color;
@@ -133,7 +132,7 @@ main {
         }
     }
     .author {
-        color: rgb(0, 205, 205);
+        color: $secondary-color;
         font-size: .9rem;
     }
 }
@@ -175,7 +174,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: set-text-color($primary-color);
+    // color: set-text-color($primary-color);
     ::placeholder {
         text-align: center;
         // color: white;
@@ -190,8 +189,9 @@ main {
     font-size: 1.5rem;
     border: none;
     outline: none;
-    border-bottom: 2px solid cyan;
-    background: white;
+    border-bottom: 2px solid rgb(55,131,194);
+    background: black;
+    color: #666;
     // background: rgba(0,0,0,0.5);
     // color: white;
     // color: set-text-color($secondary-color);
@@ -242,6 +242,9 @@ main {
     @extend .btn;
     background: darken($primary-color, 50);
     color: #fff;
+    &:hover {
+        color: #fff;
+    }
 }
 
 .btn-light {
@@ -249,20 +252,23 @@ main {
     background: white;
     // background: lighten($primary-color, 50);
     color: #333;
+    &:hover {
+        color: #fff;
+    }
 }
 
 .submit_btn {
     padding: 10px;
     color: #666;
-    border: 1px solid cyan;
-    border-radius: 1px;
-    background: white;
+    border: .5px solid rgba(55,131,194,1);
+    border-radius: 0;
+    background: none;
     // color: set-text-color($primary-color);
     // border: 1px solid rgba(0,225,225,1);
     font-size: 1rem;
     &:hover {
-        background: cyan;
-        color: #030303;
+        background: $secondary-color;
+        color: #fff;
         // border: 1px solid cyan;
         cursor: pointer;
     }
