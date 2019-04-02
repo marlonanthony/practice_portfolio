@@ -24,6 +24,15 @@
             line-height: 1;
             margin-bottom: 1rem;
         }
+        &#home {
+            justify-content: center;
+            grid-template-areas:  
+                'home-info'
+                'home-pic';
+        }
+        // .home-pic {
+        //     max-width: 200px;
+        // }
     }
 
     ul.menu-nav, 
