@@ -132,11 +132,17 @@ main {
     grid-template-areas: 'home-info home-pic'; }
     main#home h1 {
       margin-top: 20vh; }
+    main#home span {
+      color: #3783c2; }
   main .home-info {
     grid-area: home-info; }
   main .home-pic {
     grid-area: home-pic;
     max-width: 400px; }
+    main .home-pic img {
+      min-width: 250px;
+      height: 100%;
+      width: 100%; }
 
 .about-info {
   display: grid;

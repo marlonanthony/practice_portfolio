@@ -65,10 +65,9 @@ main {
     }
 
     &#home {
+        h1 { margin-top: 20vh; }
+        span { color: $secondary-color; }
         overflow: hidden;
-        h1 {
-            margin-top: 20vh;
-        }
         display: grid;
         grid-gap: 50px;
         justify-content: space-between;
@@ -79,6 +78,11 @@ main {
     .home-pic { 
         grid-area: home-pic; 
         max-width: 400px;
+        img {
+            min-width: 250px; 
+            height: 100%; 
+            width: 100%;
+        }
     }
 }
 
