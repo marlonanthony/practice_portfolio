@@ -179,6 +179,9 @@ main {
 #work h1, #work h2 {
   text-align: center; }
 
+#work p {
+  color: #3783c2; }
+
 .projects {
   display: flex;
   flex-wrap: wrap;
