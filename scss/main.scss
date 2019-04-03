@@ -9,7 +9,7 @@ body {
     color: $text-color;
     height: 100%;
     margin: 0;
-    font-family: Arial, 'Times New Roman', Times, serif, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
 
@@ -18,9 +18,7 @@ h1, h2, h3 {
     margin: 0;
     font-weight: 400;
 
-    &.lg-heading {
-        font-size: 4rem;
-    }
+    &.lg-heading { font-size: 4rem; }
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem;
