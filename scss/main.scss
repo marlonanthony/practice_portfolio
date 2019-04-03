@@ -177,8 +177,10 @@ main {
     font-size: 1.5rem;
     border: none;
     outline: none;
-    border-bottom: 2px solid rgb(55,131,194);
+    color: $text-color;
+    border-bottom: 2px solid $secondary-color;
     background: $primary-color;
+    &::placeholder { color: $text-color; }
     
 }
 

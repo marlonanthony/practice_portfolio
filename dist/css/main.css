@@ -220,8 +220,11 @@ main {
   font-size: 1.5rem;
   border: none;
   outline: none;
+  color: #666;
   border-bottom: 2px solid #3783c2;
   background: #000000; }
+  .form_control::placeholder {
+    color: #666; }
 
 .contact_icons_container {
   margin-top: 30px;
