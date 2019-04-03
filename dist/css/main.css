@@ -216,7 +216,8 @@ main {
   background: #000000; }
 
 .contact_icons_container {
-  margin-top: 50px; }
+  margin-top: 30px;
+  text-align: center; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -245,6 +246,7 @@ main {
     color: #fff; }
 
 .submit_btn {
+  margin-top: 30px;
   padding: 10px;
   color: #ccc;
   border: none;
