@@ -176,6 +176,9 @@ main {
     color: #3783c2;
     font-size: .9rem; }
 
+#work h1, #work h2 {
+  text-align: center; }
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -191,6 +194,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.project-thumbnail {
+  height: 200px;
+  width: 300px; }
 
 .project-btn-div {
   display: flex;
@@ -243,10 +250,9 @@ main {
 .submit_btn {
   margin-top: 30px;
   padding: 10px;
-  color: #ccc;
-  border: none;
-  border-radius: 0;
-  background: #3783c2;
+  color: #3783c2;
+  border: 1px solid #3783c2;
+  background: none;
   font-size: 1rem; }
   .submit_btn:hover {
     background: #3783c2;
