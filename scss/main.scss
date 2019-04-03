@@ -4,7 +4,6 @@
 * { box-sizing: border-box; }
 
 body {
-    @include background;
     background: $primary-color;
     color: $text-color;
     height: 100%;
