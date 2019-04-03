@@ -48,8 +48,6 @@ header {
 
 main {
     padding: 4rem;
-    // Calculate the height to create sticky footer
-    // The height of view port - height of footer
     min-height: calc(100vh - 60px);
 
     .icons {
@@ -197,23 +195,15 @@ main {
     }
 }
 
-.btn-dark {
+.project-btn {
     @extend .btn;
     width: 150px;
-    background: darken($primary-color, 50);
-    color: #fff;
+    background: none;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
     &:hover {
         color: #fff;
-    }
-}
-
-.btn-light {
-    @extend .btn;
-    background: white;
-    width: 150px;
-    color: #444;
-    &:hover {
-        color: #fff;
+        background: $secondary-color;
     }
 }
 

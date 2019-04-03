@@ -219,31 +219,26 @@ main {
   margin-top: 30px;
   text-align: center; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .project-btn {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
   width: 300px;
   font-size: .8rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
+  .btn:hover, .project-btn:hover {
     background: #3783c2;
     color: #000;
     cursor: pointer; }
 
-.btn-dark {
+.project-btn {
   width: 150px;
-  background: black;
-  color: #fff; }
-  .btn-dark:hover {
-    color: #fff; }
-
-.btn-light {
-  background: white;
-  width: 150px;
-  color: #444; }
-  .btn-light:hover {
-    color: #fff; }
+  background: none;
+  border: 1px solid #3783c2;
+  color: #3783c2; }
+  .project-btn:hover {
+    color: #fff;
+    background: #3783c2; }
 
 .submit_btn {
   margin-top: 30px;
