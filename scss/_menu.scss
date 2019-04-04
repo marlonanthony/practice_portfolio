@@ -32,7 +32,7 @@
 
 .menu {
     display: inline-block;
-    color: rgb(55, 131, 194);
+    color: $secondary-color;
     width: 30%;
     height: 30%;
     cursor: pointer; 
@@ -41,9 +41,7 @@
     width: 50px;
     visibility: hidden;
 
-    &.show {
-        visibility: visible;
-    }
+    &.show { visibility: visible; }
     &-nav {
         position: absolute;
         top: 120%;
@@ -57,22 +55,17 @@
         background: rgb(2.4,2.4,2.4);
         border: 1px solid rgba($secondary-color,0.2);
         text-align: left;
-        border-radius: 3px;
+        border-radius: 5px;
         overflow: hidden;
         margin: 0;
         padding: 0;
     }
 
     &-nav {
-
-        :hover {
-            background: rgba($primary-color, 1);
-        }
-        &.show {}
+        :hover { background: rgba($primary-color, 1); }
     }
 
     .nav-item {
-        &.show {}
         &.current > a {
             color: $secondary-color;
         }
@@ -87,8 +80,6 @@
         text-decoration: none;
         transition-delay: 2ms;
 
-        &:hover {
-            color: $secondary-color;
-        }
+        &:hover { color: $secondary-color; }
     }
 }
