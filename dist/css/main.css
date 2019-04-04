@@ -3,8 +3,7 @@
   z-index: 3;
   right: 35px;
   top: 35px;
-  cursor: pointer;
-  transition: all 0.5s ease-out; }
+  cursor: pointer; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
@@ -69,6 +68,9 @@
 * {
   box-sizing: border-box; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 body {
   background: #000000;
   color: #666;
@@ -91,7 +93,6 @@ h1, h2, h3 {
     color: #999; }
 
 a {
-  color: #fff;
   text-decoration: none; }
 
 header {
@@ -165,7 +166,7 @@ main {
     color: #3783c2;
     font-size: .9rem; }
 
-#work h1, #work h2 {
+#projects h1, #projects h2 {
   text-align: center; }
 
 .projects {

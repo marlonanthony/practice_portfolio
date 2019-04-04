@@ -2,6 +2,7 @@
 @import 'menu';
 
 * { box-sizing: border-box; }
+::-webkit-scrollbar { display: none; }
 
 body {
     background: $primary-color;
@@ -27,10 +28,7 @@ h1, h2, h3 {
     }
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-}
+a { text-decoration: none; }
 
 header {
     position: fixed;
@@ -123,7 +121,7 @@ main {
 }
 
 // Projects
-#work {
+#projects {
     h1, h2 {
         text-align: center;
     }
