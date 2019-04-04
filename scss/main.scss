@@ -16,14 +16,14 @@ h1, h2, h3 {
     margin: 0;
     font-weight: 400;
 
-    &.lg-heading { font-size: 4rem; }
+    &.lg-heading { font-size: 4rem; color: #999; }
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem;
     }
     &.smaller-headings {
         margin-bottom: 2rem;
-        color: #777;
+        color: #999;
     }
 }
 

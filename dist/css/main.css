@@ -46,7 +46,7 @@
     flex-direction: column;
     background: rgba(0, 0, 0, 0.9);
     border: 0.5px solid rgba(55, 131, 194, 0.1);
-    text-align: center;
+    text-align: left;
     border-radius: 3px; }
   .menu-nav {
     margin: 0;
@@ -59,9 +59,8 @@
     display: inline-block;
     position: relative;
     font-size: 20px;
-    text-transform: uppercase;
     padding: 1rem 5px;
-    color: #666;
+    color: #999;
     text-decoration: none;
     transition-delay: 2ms; }
     .menu .nav-link:hover {
@@ -82,13 +81,14 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 4rem; }
+    font-size: 4rem;
+    color: #999; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem; }
   h1.smaller-headings, h2.smaller-headings, h3.smaller-headings {
     margin-bottom: 2rem;
-    color: #777; }
+    color: #999; }
 
 a {
   color: #fff;
