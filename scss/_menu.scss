@@ -48,26 +48,25 @@
         position: absolute;
         top: 120%;
         right: 30px;
-        min-width: 200px;
+        width: 200px;
         color: #666;
-        box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
-        border: none;
         outline: none;
         list-style: none;
         display: flex;
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.9);
-        // background: #060606;
-        border: .5px solid rgba(55,131,194,0.1);
+        background: rgb(2.4,2.4,2.4);
+        border: 1px solid rgba($secondary-color,0.2);
         text-align: left;
         border-radius: 3px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
     }
 
     &-nav {
-        margin: 0;
-        padding: 0;
+
         :hover {
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba($primary-color, 1);
         }
         &.show {}
     }

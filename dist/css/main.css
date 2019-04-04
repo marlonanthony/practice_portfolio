@@ -35,23 +35,21 @@
     position: absolute;
     top: 120%;
     right: 30px;
-    min-width: 200px;
+    width: 200px;
     color: #666;
-    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
-    border: none;
     outline: none;
     list-style: none;
     display: flex;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
-    border: 0.5px solid rgba(55, 131, 194, 0.1);
+    background: #020202;
+    border: 1px solid rgba(55, 131, 194, 0.2);
     text-align: left;
-    border-radius: 3px; }
-  .menu-nav {
+    border-radius: 3px;
+    overflow: hidden;
     margin: 0;
     padding: 0; }
-    .menu-nav :hover {
-      background: rgba(0, 0, 0, 0.3); }
+  .menu-nav :hover {
+    background: black; }
   .menu .nav-item.current > a {
     color: #3783c2; }
   .menu .nav-link {
@@ -232,7 +230,7 @@ main {
 .project-btn {
   width: 150px;
   background: none;
-  border: 1px solid #3783c2;
+  border: 1px solid rgba(55, 131, 194, 0.2);
   color: #3783c2; }
   .project-btn:hover {
     color: #fff;
