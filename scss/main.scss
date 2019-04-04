@@ -127,19 +127,12 @@ main {
     h1, h2 {
         text-align: center;
     }
-    // p { color: $secondary-color; }
 }
 .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
-    img {
-        &:hover {
-            opacity: 0.5;
-            @include easeOut;
-        }
-    }
 }
 .item {
     width: 400px;
