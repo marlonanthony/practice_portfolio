@@ -33,8 +33,6 @@
 .menu {
     display: inline-block;
     color: $secondary-color;
-    width: 30%;
-    height: 30%;
     cursor: pointer; 
     border: none;
     height: 50px;
@@ -47,7 +45,6 @@
         top: 120%;
         right: 30px;
         width: 200px;
-        color: #666;
         outline: none;
         list-style: none;
         display: flex;
@@ -78,7 +75,6 @@
         padding: 1rem 5px;
         color: #999;
         text-decoration: none;
-        transition-delay: 2ms;
 
         &:hover { color: $secondary-color; }
     }
