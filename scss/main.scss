@@ -105,13 +105,8 @@ main {
     .fav-books { grid-area: fav-books; }
     .blog-posts { 
         grid-area: blog-posts; 
-        &.blog-posts-icons {
-            color: $secondary-color; 
-            font-size: 15px; 
-            margin-left: 10px;
-        }
     }
-    
+
     .about-list {
         padding: 0.5rem;
         border-bottom: $secondary-color 3px solid;
@@ -119,6 +114,11 @@ main {
             font-size: .85rem;
             list-style: none;
             padding: 5px;
+            i {
+                color: $secondary-color; 
+                font-size: 15px; 
+                margin-left: 10px;
+            }
         }
     }
     .author {

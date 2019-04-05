@@ -149,10 +149,6 @@ main {
     grid-area: fav-books; }
   .about-info .blog-posts {
     grid-area: blog-posts; }
-    .about-info .blog-posts.blog-posts-icons {
-      color: #3783c2;
-      font-size: 15px;
-      margin-left: 10px; }
   .about-info .about-list {
     padding: 0.5rem;
     border-bottom: #3783c2 3px solid; }
@@ -160,6 +156,10 @@ main {
       font-size: .85rem;
       list-style: none;
       padding: 5px; }
+      .about-info .about-list .about-desc i {
+        color: #3783c2;
+        font-size: 15px;
+        margin-left: 10px; }
   .about-info .author {
     color: #3783c2;
     font-size: .9rem; }

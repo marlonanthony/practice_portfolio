@@ -8,7 +8,7 @@ let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu)
 
-document.addEventListener('click', (e) => {
+document.addEventListener('click', e => {
   if(!e.target.closest('.menu-btn')) {
     menuBtn.classList.remove('close')
     menu.classList.remove('show')
