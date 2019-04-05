@@ -103,7 +103,14 @@ main {
 
     .books-reading { grid-area: books-reading; }
     .fav-books { grid-area: fav-books; }
-    .blog-posts { grid-area: blog-posts; }
+    .blog-posts { 
+        grid-area: blog-posts; 
+        &.blog-posts-icons {
+            color: $secondary-color; 
+            font-size: 15px; 
+            margin-left: 10px;
+        }
+    }
     
     .about-list {
         padding: 0.5rem;
