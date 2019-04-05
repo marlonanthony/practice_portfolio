@@ -7,6 +7,7 @@ const navItems = document.querySelectorAll('.nav-item')
 let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu)
+
 document.addEventListener('click', (e) => {
   if(!e.target.closest('.menu-btn')) {
     menuBtn.classList.remove('close')
@@ -17,7 +18,8 @@ document.addEventListener('click', (e) => {
     showMenu = false
   }
 })
-function toggleMenu(e) {
+
+function toggleMenu() {
   
   if(!showMenu) {
     menuBtn.classList.add('close')
