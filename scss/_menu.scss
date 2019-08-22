@@ -1,81 +1,224 @@
-.menu-btn {
+// .menu-btn {
+//     position: absolute;
+//     z-index: 3;
+//     right: 35px;
+//     top: 35px;
+//     cursor: pointer;
+
+//     .btn-line { 
+//         width: 28px;
+//         height: 3px;
+//         margin: 0 0 5px 0;
+//         background: $secondary-color;
+//         @include easeOut;
+//     }
+
+//     &.close {
+//         transform: rotate(180deg);
+
+//         .btn-line {
+//             &:nth-child(1) {
+//                 transform: rotate(45deg) translate(5px, 5px)
+//             }
+//             &:nth-child(2) {
+//                 opacity: 0;
+//             }
+//             &:nth-child(3) {
+//                 transform: rotate(-45deg) translate(7px, -6px)
+//             }
+//         }
+//     }
+// }
+
+// .menu {
+//     display: inline-block;
+//     color: $secondary-color;
+//     cursor: pointer; 
+//     border: none;
+//     height: 50px;
+//     width: 50px;
+//     visibility: hidden;
+
+//     &.show { visibility: visible; }
+//     &-nav {
+//         position: absolute;
+//         top: 120%;
+//         right: 30px;
+//         width: 200px;
+//         outline: none;
+//         list-style: none;
+//         display: flex;
+//         flex-direction: column;
+//         background: rgb(2.4,2.4,2.4);
+//         border: 1px solid rgba($secondary-color,0.2);
+//         text-align: left;
+//         border-radius: 5px;
+//         overflow: hidden;
+//         margin: 0;
+//         padding: 0;
+//     }
+
+//     &-nav {
+//         :hover { background: rgba($primary-color, 1); }
+//     }
+
+//     .nav-item {
+//         &.current > a {
+//             color: $secondary-color;
+//         }
+//     }
+
+//     .nav-link {
+//         display: inline-block;
+//         position: relative;
+//         font-size: 20px;
+//         padding: 1rem 5px;
+//         color: #999;
+//         text-decoration: none;
+
+//         &:hover { color: $secondary-color; }
+//     }
+// }
+
+
+
+
+.menu-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .menu-wrap .toggler {
     position: absolute;
-    z-index: 3;
-    right: 35px;
-    top: 35px;
+    top: 0;
+    right: 0;
+    z-index: 2;
     cursor: pointer;
-
-    .btn-line { 
-        width: 28px;
-        height: 3px;
-        margin: 0 0 5px 0;
-        background: $secondary-color;
-        @include easeOut;
-    }
-
-    &.close {
-        transform: rotate(180deg);
-
-        .btn-line {
-            &:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px)
-            }
-            &:nth-child(2) {
-                opacity: 0;
-            }
-            &:nth-child(3) {
-                transform: rotate(-45deg) translate(7px, -6px)
-            }
-        }
-    }
-}
-
-.menu {
-    display: inline-block;
-    color: $secondary-color;
-    cursor: pointer; 
-    border: none;
-    height: 50px;
     width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+  
+  .menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 50px; 
+    height: 50px;
+    padding: .7rem;
+    background: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Hamburger Line */
+  .menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+  
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+  
+  .menu-wrap .hamburger > div::after {
+    top: 10px;
+  }
+  
+  /* Toggler animate */
+  .menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  
+  .menu-wrap .toggler:checked + .hamburger > div::before,
+  .menu-wrap .toggler:checked + .hamburger > div::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  .menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+  
+  /* show menu */
+  .menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: $menu-speed;
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+  
+  .menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     visibility: hidden;
+  }
+  
+  .menu-wrap .menu > div {
+    background: $overlay-color;
+    border-radius: 50%;
+    width: 250vw;
+    height: 250vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+  
+  .menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .menu-wrap .menu > div > div > ul > li > a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.4s ease;
+  }
 
-    &.show { visibility: visible; }
-    &-nav {
-        position: absolute;
-        top: 120%;
-        right: 30px;
-        width: 200px;
-        outline: none;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        background: rgb(2.4,2.4,2.4);
-        border: 1px solid rgba($secondary-color,0.2);
-        text-align: left;
-        border-radius: 5px;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-    }
-
-    &-nav {
-        :hover { background: rgba($primary-color, 1); }
-    }
-
-    .nav-item {
-        &.current > a {
-            color: $secondary-color;
-        }
-    }
-
-    .nav-link {
-        display: inline-block;
-        position: relative;
-        font-size: 20px;
-        padding: 1rem 5px;
-        color: #999;
-        text-decoration: none;
-
-        &:hover { color: $secondary-color; }
-    }
-}
+  .menu-wrap .menu > div > div > ul > li > a:hover {
+      color: rgb(130, 150, 255);
+  }

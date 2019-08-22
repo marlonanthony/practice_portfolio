@@ -1,9 +1,9 @@
 $primary-color: #000000;
 $secondary-color: rgb(55,131,194);
-// $secondary-color: rgb(106, 66, 199);
 $text-color: #666;
-$show-home-image: false;
 $background-opacity: 0.2;
+$overlay-color: rgba(55, 131, 194, 0.75);
+$menu-speed: 0.75s;
 
 @mixin easeOut {
     transition: all 0.5s ease-out;
