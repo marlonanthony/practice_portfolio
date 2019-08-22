@@ -175,7 +175,7 @@ main {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #3783c2;
-        transition: all 0.5s ease-out; }
+        transition: all 0.5s ease; }
   main#home {
     overflow: hidden;
     display: grid;
@@ -223,11 +223,15 @@ main {
     .about-info .about-list .about-desc {
       font-size: .85rem;
       list-style: none;
-      padding: 5px; }
+      padding: 0.6rem; }
       .about-info .about-list .about-desc i {
         color: #3783c2;
         font-size: 15px;
-        margin-left: 10px; }
+        margin-left: 10px;
+        opacity: 1;
+        transition: opacity 0.4s ease; }
+        .about-info .about-list .about-desc i:hover {
+          opacity: 0.6; }
   .about-info .author {
     color: #3783c2;
     font-size: .9rem; }

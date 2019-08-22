@@ -9,6 +9,10 @@ $menu-speed: 0.75s;
     transition: all 0.5s ease-out;
 }
 
+@mixin ease {
+    transition: all 0.5s ease;
+}
+
 // Set Text Color
 @function set-text-color($color) {
     @if (lightness($color) > 40) {

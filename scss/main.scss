@@ -51,7 +51,7 @@ main {
             padding: 0.4rem;
             &:hover {
                 color: $secondary-color;
-                @include easeOut();
+                @include ease();
             }
         }
     }
@@ -113,11 +113,17 @@ main {
         .about-desc {
             font-size: .85rem;
             list-style: none;
-            padding: 5px;
+            padding: 0.6rem;
             i {
                 color: $secondary-color; 
                 font-size: 15px; 
                 margin-left: 10px;
+                opacity: 1;
+                transition: opacity 0.4s ease;
+
+                &:hover {
+                    opacity: 0.6;
+                }
             }
         }
     }
