@@ -168,14 +168,15 @@ main {
     }
 }
 .form_control {
-    padding: 20px;
-    width: 80%;
+    padding: 8px;
+    width: 60%;
     margin: 5px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border: none;
     outline: none;
     color: $text-color;
     border-bottom: 2px solid $secondary-color;
+    background: whitesmoke;
     background: $primary-color;
     &::placeholder { color: $text-color; }
     

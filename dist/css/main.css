@@ -199,14 +199,15 @@ main {
     font-size: 1rem; }
 
 .form_control {
-  padding: 20px;
-  width: 80%;
+  padding: 8px;
+  width: 60%;
   margin: 5px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border: none;
   outline: none;
   color: #666;
   border-bottom: 2px solid #3783c2;
+  background: whitesmoke;
   background: #000000; }
   .form_control::placeholder {
     color: #666; }
