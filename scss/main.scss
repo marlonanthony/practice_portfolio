@@ -150,6 +150,12 @@ main {
 .project-thumbnail {
     height: 200px;
     width: 300px;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+
+    &:hover {
+        opacity: 0.5;
+    }
 }
 .project-btn-div {
     display: flex;
