@@ -315,15 +315,16 @@ main {
 
 .submit_btn {
   margin-top: 30px;
-  padding: 10px;
-  color: #3783c2;
-  border: 1px solid #3783c2;
-  background: none;
-  font-size: 1rem; }
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  border: none;
+  background: #3783c2;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.25s ease-in; }
   .submit_btn:hover {
-    background: #3783c2;
-    color: #fff;
-    cursor: pointer; }
+    opacity: 0.7; }
 
 @media screen and (min-width: 1171px) {
   .projects {
