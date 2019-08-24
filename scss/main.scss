@@ -47,12 +47,10 @@ main {
     .icons {
         margin-top: 1rem;
         a {
-            
             color: $secondary-color;
             padding: 0.4rem;
             opacity: 1;
             &:hover {
-                
                 opacity: 0.7;
                 @include easeIn();
             }
