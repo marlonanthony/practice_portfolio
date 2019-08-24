@@ -171,11 +171,12 @@ main {
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      color: #666;
-      padding: 0.4rem; }
+      color: #3783c2;
+      padding: 0.4rem;
+      opacity: 1; }
       main .icons a:hover {
-        color: #3783c2;
-        transition: all 0.5s ease; }
+        opacity: 0.7;
+        transition: all 0.5s ease-in; }
   main#home {
     overflow: hidden;
     display: grid;
