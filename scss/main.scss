@@ -44,20 +44,6 @@ main {
     padding: 4rem;
     min-height: calc(100vh - 60px);
 
-    .icons {
-        margin-top: 1rem;
-        
-        a {
-            color: $secondary-color;
-            padding: 0.4rem;
-            opacity: 1;
-            &:hover {
-                opacity: 0.7;
-                @include easeIn();
-            }
-        }
-    }
-
     &#home {
         h1 { margin-top: 20vh; }
         span { color: $secondary-color; }
@@ -200,6 +186,32 @@ main {
 .contact_icons_container {
     margin-top: 30px;
     text-align: center;
+}
+
+.icons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    a {
+        color: $secondary-color;
+        padding: 0.4rem;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            opacity: 0.7;
+            @include easeIn();
+        }
+    }
+
+    label {
+        cursor: pointer;
+    }
 }
 
 // Button Styles
