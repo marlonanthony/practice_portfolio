@@ -196,7 +196,6 @@ main {
   .about-info .about-image {
     grid-area: aboutimage; }
     .about-info .about-image img {
-      min-width: 250px;
       height: 100%;
       width: 100%; }
   .about-info .bio {
