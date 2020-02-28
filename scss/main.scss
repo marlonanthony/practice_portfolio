@@ -103,7 +103,7 @@ main {
             padding: 0.6rem;
             i {
                 color: $secondary-color; 
-                font-size: 15px; 
+                font-size: 20px; 
                 margin-left: 10px;
                 opacity: 1;
                 transition: opacity 0.4s ease;
@@ -176,7 +176,6 @@ main {
     outline: none;
     color: $text-color;
     border-bottom: 2px solid $secondary-color;
-    background: whitesmoke;
     background: $primary-color;
     &::placeholder { color: $text-color; }
     

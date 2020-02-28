@@ -217,7 +217,7 @@ main {
       padding: 0.6rem; }
       .about-info .about-list .about-desc i {
         color: #3783c2;
-        font-size: 15px;
+        font-size: 20px;
         margin-left: 10px;
         opacity: 1;
         transition: opacity 0.4s ease; }
@@ -274,7 +274,6 @@ main {
   outline: none;
   color: #666;
   border-bottom: 2px solid #3783c2;
-  background: whitesmoke;
   background: #000000; }
   .form_control::placeholder {
     color: #666; }
